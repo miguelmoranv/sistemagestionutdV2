@@ -22,6 +22,7 @@ include_once('encabezado.php');
 	<div >
 	     <form method="post" action="files/agregar.php">
 		 <h2 align="center">Agregar nuevo "Usuario"</h2>
+     <h2>Mensaje enviado desde GitHub</h2>
      <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="datos_personales.php">Administrar</a></li>
               <li class="breadcrumb-item active">Nuevo</li>

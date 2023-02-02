@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Grotesque';
+    src: url(../fonts/Galano\ Grotesque\ Alt\ Extra\ Bold\ Italic.otf);
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+.container-newLogin {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 1fr auto  auto  auto auto 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". main ."
+    ". main ."
+    ". main ."
+    ". main."
+    ". . .";
+}
+
+.main-newLogin {
+    grid-area: main;
+    display: flex;
+    margin: 0rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 0.3rem;
+}
+
+.img-newLogin {
+    background: url(../img/utdisnta.jpg) no-repeat left fixed;
+    background-size: cover;
+    width: 50%;
+    color: white;
+    border-radius: 0.3rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 1.25rem;
+  
+}
+.img-newLogin h2{
+    font-weight: 400;
+    text-justify: distribute-all-lines;
+}
+.formulario-newLogin {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+.form{
+    width: 70%;
+}
+.formulario-newLogin a {
+    text-decoration: none;
+    font-weight: 600;
+    color:#666;
+    font-size: 1.125rem;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.formulario-newLogin h1 {
+    color: #038168;
+    font-size: 4vw;
+    line-height: 4.6vw;
+    padding: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center;
+    font-family: 'Grotesque';
+    text-justify:distribute-all-lines;
+    margin: 0;
+    margin-bottom: 1vw;
+}
+
+.formulario-newLogin label {
+    color: #02a282;
+    font-weight: 600;
+}
+
+#checkbox-login {
+    accent-color: #02a282;
+    
+}
+
+.formulario-newLogin .btn-login {
+    background-color: #038168;
+    color: white;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 0.5rem 1rem;
+    width: 40%;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .6s ease;
+    margin-bottom: 2vw;
+}
+.formulario-newLogin .btn-login:hover{
+    background: #04a285;
+    cursor: pointer;
+}
+
+.formulario-newLogin .input-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    outline: none;
+    text-indent: 10px;
+    border: none;
+    border-bottom: #02a282 1px solid;
+}
+
+.input-container .password-toggle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 3px;
+    right: 2px;
+    color: #038168;
+    border-radius: 50%; 
+    text-align: center;
+    line-height: 35px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.input-container .password-toggle.active i.fa-eye {
+    display: none;
+}
+
+.input-container .password-toggle.active i.fa-eye-slash {
+    display: inline;
+}
+
+.input-container .password-toggle i.fa-eye-slash {
+    display: none;
+}
+
+.password-policies {
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 90%;
+    padding: 0px;
+    height: 0px;
+    background: #038168;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    opacity: 1;
+    overflow: hidden;
+    transition: height 300ms ease-in-out,
+                opacity 300ms ease-in-out;
+}
+.password-policies.active {
+    opacity: 1;
+    padding: 10px;
+    height: 180px;
+}
+
+.password-policies > div {
+    margin: 15px 10px;
+    font-weight: 600;
+    color: rgb(163, 163, 163);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.password-policies > div.active {
+    color: white;
+}

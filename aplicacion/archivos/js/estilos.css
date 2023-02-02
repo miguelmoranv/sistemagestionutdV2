@@ -1,0 +1,310 @@
+
+
+
+
+
+.nav{
+    width: 300px;
+}
+
+.nav_link{
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav_link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav_link--inside:hover{
+    background: #F6F8FA;
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background-color: white;
+}
+
+.list_item{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list_item--click{
+    cursor: pointer;
+}
+
+.list_button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list_arrow{
+    transform: rotate(90deg);
+}
+
+.list_arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list_show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+/*estilos encabezado*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background-color: white;
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: white;
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+        background-color: #02a282 ;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+		display: contents;
+	}
+	
+	.btn-menu {
+		float: left;
+		margin-right: 50px;
+		text-align: left;
+		
+	}
+	.container .btn-menu label{
+		color: rgb(0, 0, 0);
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo {
+		color: rgb(255, 255, 255);
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 200px;
+		margin-top: 20px;
+		display: flex;
+	}
+
+	.utd{
+		margin-right: auto;
+		margin-left: 70px;
+	}
+	.container .menu{
+		float: right;
+		line-height: px;
+		border-top: 50px;
+	}
+	.usuario{
+		text-align: right;	
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		transition: all 0.3s ease;
+		border-bottom: 50px solid transparent;
+		font-size: 24px;
+		
+	}
+	.container .usuario h5{
+		border-top: 50px;
+		line-height: normal;
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 35px;
+		margin-right: 5px;
+		background-color: #efb801;
+		border-radius: 10px;
+		box-shadow: black 15px;
+		display: flex;
+	}
+	.container .usuario h5:hover{
+		
+		padding-bottom:px;
+		box-shadow: black 15px;
+		cursor: pointer;
+		text-align: center;
+        
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: flex;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100%;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 20%;
+		background:white;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+        height: 100%;
+        
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #02a282;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+        
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #02a282;
+		background: #efb801;
+        font-weight: bold;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #02a282;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	@media screen (max-widht:400px) {
+	
+	}
+
+	.tabla-planeaciones{
+		text-align: center;
+		justify-content: center;
+		
+	}
+	.categorias{
+		background-color: #efb801;
+	}
+	.columnas{
+		background-color: #02a282;
+		color: white;
+	}
+
+	.eliminar{
+		background-color: rgb(255, 0, 0);
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		color:white;
+	}
+	.tabla_actualizar{		
+		text-align: center;
+		justify-content: center;
+		height: auto;
+		width: auto;
+	}
+	.datos{
+		text-align: center;
+		justify-content: center;
+	}
+	.btn_acciones{
+	background-color: blue;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	color:white;
+	text-decoration: none;
+	}
+.guardar{
+	
+		color: black;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		
+}
+.fonsai{
+	font-size: 25px;
+}
+.title{
+	padding-left: 1px;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #02a282;
+    display: inline-block;
+}
+
+.inputfile:focus + label, .inputfile + label:hover {
+    background-color: #efb801;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+	outline: 1px dotted #02a282;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+/*usuario*/
+

@@ -1,4 +1,5 @@
 <?php 
+phpinfo();
 	header('Location: php/login.php');
 ?>
 <!DOCTYPE html>
